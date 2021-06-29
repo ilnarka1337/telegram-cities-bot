@@ -13,4 +13,5 @@ class User(Model):
         database=db
 
 User.create(user_id=///, i td)
+ssssssss
 current_user=User.get(User.user_id == )
