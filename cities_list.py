@@ -75,10 +75,3 @@ while new_city != 'СТОП':
     user_city_lchar = new_city[-1]
     if user_city_lchar in ['Ь', 'Ъ', 'Ы']:
         user_city_lchar = new_city[-2]
-
-        # user_city = city_search(user_city_lchar)
-        # if user_city is not None:
-        #     print(user_city)
-        #     print(old_cities)
-        # else:
-        #     print("Город не найден")
