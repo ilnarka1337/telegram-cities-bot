@@ -12,5 +12,5 @@ class User(Model):
     class Meta:
         database=db
 
-User.create(user_id=///, i td)
+User.create(user_id = i td)
 current_user=User.get(User.user_id == )
