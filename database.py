@@ -13,6 +13,4 @@ class User(Model):
         database=db
 
 User.create(user_id = i td)
-123
-123
 current_user=User.get(User.user_id == )
