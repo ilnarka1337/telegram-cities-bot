@@ -1,9 +1,7 @@
 # Default ignored files
 /shelf/
 /workspace.xml
-/bot_config.py
-./bot_config.py
-/bot_config.py
+../bot_config.py
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml

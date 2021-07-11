@@ -7,6 +7,7 @@ import logging, configs, city_game, bot_config
 
 from aiogram import Bot, Dispatcher, executor, types
 
+
 API_TOKEN = bot_config.API_TOKEN
 
 # Configure logging
