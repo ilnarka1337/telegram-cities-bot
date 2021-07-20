@@ -6,15 +6,21 @@ with open('cities.json', 'r', encoding='utf-8') as f:
 
 old_cities = []
 
-def generate_rnd_city():
-    rnd_id = random.randint(6, 30000)
+def generate_rnd_city_addon():
+    rnd_id = random.randint(6, 15789520)
     for city in file_content:
         if str(rnd_id) == city['city_id']:
             start_city = [city['name'], city['city_id']]
             old_cities.append(city['city_id'])
             return start_city
         else:
-            rnd_id = random.randint(6, 3000)
+            rnd_id = random.randint(6, 15789520)
+
+def generate_random_city():
+    bot_city = generate_rnd_city_addon()
+    while bot_city is None:
+        bot_city = generate_rnd_city_addon()
+    return bot_city
 
 def get_last_char(city):
     city_last_char=city[-1]

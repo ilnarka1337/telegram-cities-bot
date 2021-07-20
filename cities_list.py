@@ -20,6 +20,8 @@ def generate_new_city(new_city):
     print("Кажется, ты выиграл... Поздравляю!")
 
 
+
+
 def check_city(new_city,old_city):
     for city in file_content:
         if new_city == (city['name']) and str(city['city_id']) not in old_cities:

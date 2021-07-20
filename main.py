@@ -29,11 +29,9 @@ async def send_welcome(message: types.Message):
 async def start_cities(message: types.Message):
     await message.reply("Ты решил сыграть со мной в города? А ты смельчак! Тогда вперёд!")
     configs.cities_state = 1
-    rnd_city = city_game.generate_rnd_city()
-    while rnd_city is None:
-        rnd_city = city_game.generate_rnd_city()
-    city_last_char = city_game.get_last_char(rnd_city[0])
-    await message.answer("Начнём, мой город = " + rnd_city[0] + "\nТебе на " + city_last_char)
+    bot_city = city_game.generate_random_city()
+    city_last_char = city_game.get_last_char(bot_city[0])
+    await message.answer("Начнём, мой город = " + bot_city[0] + "\nТебе на " + city_last_char)
 
 
 
